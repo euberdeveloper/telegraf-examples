@@ -13,7 +13,7 @@ bot.command("image", ctx =>
 );
 bot.on("text", ctx => ctx.reply("Hello"));
 
-app.use(koaBody());
+app.use((koaBody as any)());
 
 app.use(async (ctx, next) =>
 	(await bot.createWebhook({ domain: webhookDomain }))(ctx.req, ctx.res, next),

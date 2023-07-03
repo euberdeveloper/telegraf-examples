@@ -2,9 +2,9 @@
 	"compilerOptions": {
 		"strict": true,
 		"module": "NodeNext",
-		"target": "es2021",
+		"target": "ES2021",
 		"outDir": "./dist-examples"
 	},
 	"include": ["./global.d.ts", "./examples"],
-	"exclude": ["./examples/functions"]
+	"exclude": ["./examples/bots/functions"]
 }
